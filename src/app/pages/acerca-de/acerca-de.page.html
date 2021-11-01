@@ -1,0 +1,31 @@
+<app-header [title]="'Acerca de'"></app-header>
+
+<ion-content>
+    <app-card [title]="'Titulo de la serie'" [description]="infoSerie.titulo"></app-card>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>
+                <ion-label>Protagonistas</ion-label>
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content *ngFor="let protagonista of infoSerie.protagonistas">
+            <ion-label>{{protagonista}}</ion-label>
+        </ion-card-content>
+    </ion-card>
+    <app-card [title]="'Resumen'" [description]="infoSerie.resumen"></app-card>
+    <app-card [title]="'Idioma original'" [description]="infoSerie.idiomaOriginal"></app-card>
+    <app-card [title]="'Numeros de temporadas'" [description]="infoSerie.numTemporadas"></app-card>
+    <app-card [title]="'Numeros de episodios'" [description]="infoSerie.numEpisodios"></app-card>
+    <app-card [title]="'Primera emision'" [description]="infoSerie.primeraEmision"></app-card>
+    <app-card [title]="'Ultima emision'" [description]="infoSerie.ultimaEmision"></app-card>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>
+                <ion-label>Creadores</ion-label>
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content *ngFor="let creador of infoSerie.creadores">
+            <ion-button color="tertiary" expand="block" [routerLink]="['creador', creador.id]">{{creador.nombre}}</ion-button>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

@@ -1,0 +1,13 @@
+<app-header [title]="'Personajes'"></app-header>
+
+<ion-content>
+    <ion-list>
+        <div *ngFor="let personaje of personajes">
+            <ion-item [routerLink]="['/personajes/personaje', personaje.id]">
+                <ion-label>
+                    <h2>{{personaje.nombre}}</h2>
+                </ion-label>
+            </ion-item>
+        </div>
+    </ion-list>
+</ion-content>

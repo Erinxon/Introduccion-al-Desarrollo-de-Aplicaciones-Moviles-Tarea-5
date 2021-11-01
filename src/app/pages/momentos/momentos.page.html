@@ -1,0 +1,13 @@
+<app-header [title]="'Momentos'"></app-header>
+
+<ion-content fullscreen scroll-y="false">
+    <ion-slides>
+        <ion-slide *ngFor="let momento of momentos">
+            <div class="slide">
+              <h1>{{momento.titulo}}</h1>
+              <img [src]="momento.img"/>
+              <p *ngFor="let descripcion of momento.descripciones">{{descripcion}}</p>
+            </div>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

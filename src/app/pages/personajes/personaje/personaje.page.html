@@ -1,0 +1,40 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/personajes"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{personaje.nombre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="avatar">
+    <ion-avatar style="width: 230px;height: 230px;">
+      <img [src]="personaje.img">
+    </ion-avatar>
+  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ocupación</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-label>{{personaje.ocupacion}}</ion-label>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Estado</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-label>{{personaje.estado}}</ion-label>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Historia</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-infinite-scroll>{{personaje.historia}}</ion-infinite-scroll>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,19 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/acerca-de"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{creador.nombre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="avatar">
+    <ion-avatar style="width: 200px;height: 200px;">
+      <img [src]="creador.img">
+    </ion-avatar>
+  </div>
+  <app-card [title]="'Nacionalidad'" [description]="creador.nacionalidad"></app-card>
+  <app-card [title]="'Lengua Materna'" [description]="creador.lenguaMaterna"></app-card>
+  <app-card [title]="'Biografia'" [description]="creador.biografia"></app-card>
+</ion-content>
