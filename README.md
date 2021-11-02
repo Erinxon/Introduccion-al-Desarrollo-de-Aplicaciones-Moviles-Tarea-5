@@ -1,6 +1,8 @@
 # Introducción al Desarrollo de Aplicaciones Móviles - Tarea 5
 
-# Tarea 5 - Ionic
+# Tarea 5 - Ionic 
+
+# Erinxon Santana | 2019-7708
 
 ## Realiza una aplicacion dedicada a su serie favorita, la misma debe tener una pantalla principal con la imagen de su serie, agregue las siguientes opciones.
 
