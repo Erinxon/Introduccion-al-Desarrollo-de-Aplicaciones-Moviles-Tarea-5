@@ -18,8 +18,8 @@ export class MomentosPage implements OnInit {
       {
         titulo: 'Jack Sigue Adelante Con Sus Seres Queridos',
         img: '../../../assets/images/momentos/momento1.jpg',
-        descripciones: ['El final del final de la serie es el momento más conmovedor de Lost . Es gratificante ver a Jack, sus seres queridos y los supervivientes que se convirtieron en su familia habiendo recordado sus vidas, ahora reunidos y listos para seguir adelante juntos.',
-        'Los lazos significativos que Jack forjó con estos individuos trascienden la muerte misma. Después de todo lo que Jack y los demás soportaron, es reconfortante saber que han encontrado la paz, la felicidad y que están juntos a medida que avanzan.'],
+        descripciones: ['El final del final de la serie es el momento más conmovedor de Lost. Es gratificante ver a Jack, sus seres queridos y los supervivientes que se convirtieron en su familia habiendo recordado sus vidas, ahora reunidos y listos para seguir adelante juntos.',
+        'Después de todo lo que Jack y los demás soportaron, es reconfortante saber que han encontrado la paz, la felicidad y que están juntos a medida que avanzan.'],
       },
       {
         titulo: 'Llamada Telefónica De Desmond Y Penny',
